@@ -1,0 +1,31 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.Lumememm"
+             Title="Lumememm">
+    <ScrollView>
+        <StackLayout Margin="20">
+
+            <Frame x:Name="Snowman" BackgroundColor="Black" Padding="0" CornerRadius="0" HorizontalOptions="Center" VerticalOptions="Center">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Ellipse x:Name="TopCircle" Grid.Row="0" Fill="White" WidthRequest="50" HeightRequest="50" HorizontalOptions="Center" />
+                    <Ellipse x:Name="MiddleCircle" Grid.Row="1" Fill="White" WidthRequest="70" HeightRequest="70" HorizontalOptions="Center" />
+                    <Ellipse x:Name="BottomCircle" Grid.Row="2" Fill="White" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" />
+                </Grid>
+            </Frame>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End" Spacing="10">
+                    <Button Text="Спрятать" MinimumWidthRequest="100" MinimumHeightRequest="50" Clicked="HideSnowman_Clicked" />
+                    <Button Text="Показать" MinimumWidthRequest="100" MinimumHeightRequest="50" Clicked="ShowSnowman_Clicked" />
+                    <Button Text="Растопить" MinimumWidthRequest="100" MinimumHeightRequest="50" Clicked="MeltSnowman_Clicked" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End" Spacing="10">
+                    <Button Text="Раскрасить" MinimumWidthRequest="100" MinimumHeightRequest="50" Clicked="ColorSnowman_Clicked" />
+                    <Button Text="Увеличить снеговика!" MinimumWidthRequest="100" MinimumHeightRequest="50" Clicked="CustomAction_Clicked" />
+                </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

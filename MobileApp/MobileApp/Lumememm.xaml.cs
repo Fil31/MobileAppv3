@@ -47,7 +47,7 @@ namespace MobileApp
 
         private async void CustomAction_Clicked(object sender, EventArgs e)
         {
-            double scaleFactor = 1.5; // Значение, на которое нужно увеличить или уменьшить снеговика
+            double scaleFactor = 1.5; 
             await ScaleSnowmanAsync(scaleFactor);
         }
     }
